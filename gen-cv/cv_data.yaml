@@ -1,0 +1,201 @@
+informacion_personal:
+  nombre: Daniel Mattos Rosales
+  titulo_profesional: Senior Odoo & Python Developer
+
+  contacto:
+    email: dmattosr@gmail.com
+    telefono: "(+51) 975-539-792"
+    ubicacion: Lima, Perú
+    linkedin: linkedin.com/in/dmattospe
+    portafolio: dmattosr.github.io
+
+perfil:
+  corto: >
+    Senior Odoo Developer con +10 años implementando soluciones ERP,
+    desarrollo de módulos personalizados e integraciones REST API
+    para sector público y privado.
+
+  largo: >
+    Desarrollador Senior Odoo con más de 10 años de experiencia
+    diseñando, implementando y optimizando soluciones ERP.
+    Especializado en arquitectura Odoo, desarrollo backend en Python,
+    integraciones API REST y despliegues en entornos Linux y Docker.
+    Experiencia en procesos de ventas, logística, salud,
+    facturación electrónica y gestión administrativa.
+
+habilidades_tecnicas:
+  core_stack:
+    - Odoo
+    - Python
+    - PostgreSQL
+    - REST APIs
+    - Docker
+    - Linux
+
+  lenguajes:
+    - Python
+    - JavaScript
+    - XML
+    - HTML5
+    - CSS3
+
+  erp_framework:
+    - Odoo Enterprise & Community
+    - ORM y herencia de modelos
+    - QWeb Reports
+    - Odoo.sh
+
+  base_de_datos:
+    - PostgreSQL
+    - SQL Server
+    - MySQL
+
+  devops_tools:
+    - Docker, Dokploy
+    - Git, GitHub, GitLab, Gitea
+    - Nginx
+    - Linux (Ubuntu/Debian/CachyOS)
+
+experiencia_laboral:
+  - cargo: "Desarrollador Odoo Freelance"
+    empresa: "Crombie.dev - Argentina / Opentech - Uruguay / PosExpert - El Salvador/ Oz Solutions - Perú"
+    periodo: "Abr 2024 - Actualidad"
+
+    resumen: >
+      Desarrollo de soluciones Odoo para clientes internacionales.
+
+    logros:
+      - texto: Desarrollo de módulos personalizados y adaptaciones sobre Odoo estándar.
+        priority: high
+      - texto: Integración frontend React con backend Odoo.
+        priority: high
+      - texto: Implementación de integraciones REST API.
+        priority: high
+
+    technical:
+      stack:
+        - Odoo 15/16/17
+        - Python
+        - PostgreSQL
+        - Docker
+      arquitectura:
+        - Integración React + Odoo Backend
+        - Diseño modular basado en ORM
+
+  - cargo: Especialista Python – Odoo
+    empresa: Rapid Technologies / Grupo Quanam
+    periodo: "Jun 2023 - Abr 2024"
+
+    logros:
+      - texto: Desarrollo de funcionalidades para distribuidoras corporativas (ALICORP).
+        priority: high
+      - texto: Migraciones e implementaciones Odoo.
+        priority: high
+      - texto: Configuración de localizaciones regionales.
+        priority: medium
+
+  - cargo: Desarrollador Odoo
+    empresa: Ministerio de Salud
+    periodo: "Nov 2016 - Mar 2022"
+
+    logros:
+      - texto: Sistema Sicovid-Empresas para vigilancia sanitaria nacional.
+        priority: high
+      - texto: Plataforma nacional de calidad del agua.
+        priority: high
+      - texto: Historia Clínica Electrónica.
+        priority: medium
+      - texto: Sistema de Recursos Humanos institucional.
+        priority: medium
+
+    technical:
+      stack:
+        - Odoo 10/14
+        - Python
+        - Django
+        - PostgreSQL
+        - Docker
+      arquitectura:
+        - Odoo Backend
+
+  - cargo: "Instructor Odoo ERP"
+    empresa: "Escuela Fullstack"
+    periodo: "Ago 2021 - Oct 2021"
+
+    logros:
+      - texto: "Capacitación especializada en desarrollo backend y frontend sobre Odoo ERP para estudiantes y profesionales TI."
+        priority: high
+
+      - texto: "Diseño e implementación de entornos de desarrollo Odoo basados en Linux, Docker y PostgreSQL."
+        priority: high
+
+      - texto: "Formación práctica en arquitectura Odoo, ORM y despliegue de aplicaciones ERP."
+        priority: medium
+
+    technical:
+      stack:
+        - Odoo
+        - Python
+        - Docker
+        - PostgreSQL
+        - Linux
+      arquitectura:
+        - Entornos reproducibles de desarrollo ERP
+        - Configuración DevOps básica para Odoo
+
+  - cargo: "Desarrollador Odoo"
+    empresa: "Corporación Kadosh SAC"
+    periodo: "Sep 2016 - Nov 2016"
+
+    logros:
+      - texto: "Desarrollo del sistema de facturación electrónica y retenciones conforme a normativa fiscal peruana."
+        priority: high
+
+      - texto: "Implementación y localización de módulos Odoo adaptados a procesos contables nacionales."
+        priority: high
+
+      - texto: "Personalización de flujos administrativos mediante extensiones del framework Odoo."
+        priority: medium
+
+    technical:
+      stack:
+        - Odoo
+        - Python
+        - PostgreSQL
+        - XML
+      arquitectura:
+        - Localización fiscal Odoo Perú
+        - Extensión modular mediante ORM
+
+  - cargo: "Desarrollador de Software"
+    empresa: "Peru Software Factory SAC"
+    periodo: "Feb 2015 - Sep 2015"
+
+    logros:
+      - texto: "Desarrollo de plataforma de homologación de proveedores basada en evaluación cuantitativa de riesgos."
+        priority: high
+
+      - texto: "Diseño de modelos de evaluación automatizada para soporte en procesos de contratación empresarial."
+        priority: high
+
+      - texto: "Personalización de módulos Odoo alineados a requerimientos específicos del cliente."
+        priority: medium
+
+    technical:
+      stack:
+        - Odoo
+        - Python
+        - PostgreSQL
+      arquitectura:
+        - Modelado de evaluación de riesgo empresarial
+        - Desarrollo modular ERP
+
+educacion:
+  - grado: Ingeniería de Sistemas
+    institucion: Universidad Nacional de Ingeniería
+
+idiomas:
+  - idioma: Español
+    nivel: Nativo
+  - idioma: Inglés
+    nivel: Técnico
