@@ -9,18 +9,23 @@ informacion_personal:
     linkedin: linkedin.com/in/dmattospe
     portafolio: dmattosr.github.io
 
+disponibilidad:
+  modalidad: Freelance
+  tipo: Remoto
+  disponibilidad: Full-time
+
 perfil:
   corto: >
-    Senior Odoo & Python Developer especializado en integración de sistemas
-    y automatización documental, con +10 años implementando soluciones ERP
-    escalables para sector público y privado.
+    Senior Odoo & Python Developer con +10 años de experiencia en proyectos ERP,
+    especializado en integración de sistemas y automatización documental.
+    Experiencia trabajando de forma remota con equipos internacionales en LATAM.
 
   largo: >
     Desarrollador Senior Odoo con más de 10 años de experiencia diseñando
     soluciones ERP orientadas a integración y automatización de procesos.
     Especializado en arquitectura Odoo, backend en Python e integración con
-    servicios externos (REST APIs, SaaS). Experiencia en proyectos de alto
-    impacto en sectores como salud, logística y facturación electrónica.
+    servicios externos (REST APIs, SaaS). Experiencia en proyectos internacionales,
+    colaborando en equipos distribuidos y entornos ágiles.
 
 especialidades:
   - Integración de sistemas (APIs, SaaS)
@@ -61,20 +66,24 @@ habilidades_tecnicas:
     - Nginx
     - Linux (Ubuntu/Debian/CachyOS)
 
+  metodologias:
+    - Agile / Scrum
+    - Trabajo remoto colaborativo
+
 experiencia_laboral:
   - cargo: "Desarrollador Python / Odoo"
     empresa: "Crombie.dev - Argentina"
     periodo: "Ene 2025 - Actualidad"
 
     resumen: >
-      Desarrollo de soluciones Odoo para clientes internacionales, con enfoque
-      en integración de sistemas, automatización documental y arquitectura escalable.
+      Desarrollo de soluciones Odoo para clientes internacionales en LATAM,
+      trabajando de forma remota en equipos distribuidos y entornos ágiles.
 
     logros:
-      - texto: Integración de Odoo con APIs externas (iLovePDF, iLoveIMG, iLoveSign) para automatización de procesamiento y firma de documentos.
+      - texto: Desarrollo y personalización de módulos Odoo integrando APIs externas (iLovePDF, iLoveIMG, iLoveSign).
         priority: high
 
-      - texto: Desarrollo de módulos Odoo y flujos documentales end-to-end optimizando tiempos operativos y reduciendo errores manuales.
+      - texto: Implementación de flujos documentales end-to-end optimizando tiempos operativos y reduciendo errores manuales.
         priority: high
 
     technical:
@@ -95,8 +104,8 @@ experiencia_laboral:
     periodo: "Abr 2024 - Actualidad"
 
     resumen: >
-      Desarrollo de soluciones Odoo para múltiples clientes en LATAM,
-      enfocado en personalización, integración y escalabilidad.
+      Desarrollo de soluciones Odoo para múltiples clientes internacionales,
+      colaborando con equipos distribuidos en proyectos remotos.
 
     logros:
       - texto: Desarrollo de módulos personalizados y adaptaciones sobre Odoo estándar.
