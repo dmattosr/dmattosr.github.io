@@ -11,26 +11,31 @@ informacion_personal:
 
 perfil:
   corto: >
-    Senior Odoo Developer con +10 años implementando soluciones ERP,
-    desarrollo de módulos personalizados e integraciones REST API
-    para sector público y privado.
+    Senior Odoo & Python Developer especializado en integración de sistemas
+    y automatización documental, con +10 años implementando soluciones ERP
+    escalables para sector público y privado.
 
   largo: >
-    Desarrollador Senior Odoo con más de 10 años de experiencia
-    diseñando, implementando y optimizando soluciones ERP.
-    Especializado en arquitectura Odoo, desarrollo backend en Python,
-    integraciones API REST y despliegues en entornos Linux y Docker.
-    Experiencia en procesos de ventas, logística, salud,
-    facturación electrónica y gestión administrativa.
+    Desarrollador Senior Odoo con más de 10 años de experiencia diseñando
+    soluciones ERP orientadas a integración y automatización de procesos.
+    Especializado en arquitectura Odoo, backend en Python e integración con
+    servicios externos (REST APIs, SaaS). Experiencia en proyectos de alto
+    impacto en sectores como salud, logística y facturación electrónica.
+
+especialidades:
+  - Integración de sistemas (APIs, SaaS)
+  - Automatización documental
+  - Arquitectura Odoo
+  - Desarrollo backend Python
 
 habilidades_tecnicas:
   core_stack:
-    - Odoo
-    - Python
-    - PostgreSQL
-    - REST APIs
-    - Docker
-    - Linux
+    - Odoo (v10 - v19)
+    - Python (Backend & Integrations)
+    - PostgreSQL (Optimization & Tuning)
+    - REST APIs (Integration Design)
+    - Docker (Containerization)
+    - Linux (Production Environments)
 
   lenguajes:
     - Python
@@ -62,14 +67,14 @@ experiencia_laboral:
     periodo: "Ene 2025 - Actualidad"
 
     resumen: >
-      Desarrollo de soluciones Odoo para clientes internacionales, incluyendo
-      automatización documental e integración con servicios SaaS externos.
+      Desarrollo de soluciones Odoo para clientes internacionales, con enfoque
+      en integración de sistemas, automatización documental y arquitectura escalable.
 
     logros:
-      - texto: Desarrollo de módulos Odoo e integración con APIs externas (iLovePDF, iLoveSign), automatizando el procesamiento y firma de documentos.
+      - texto: Integración de Odoo con APIs externas (iLovePDF, iLoveIMG, iLoveSign) para automatización de procesamiento y firma de documentos.
         priority: high
 
-      - texto: Integración con APIs de servicios como iLovePDF, iLoveIMG e iLoveSign para automatización de procesamiento de documentos.
+      - texto: Desarrollo de módulos Odoo y flujos documentales end-to-end optimizando tiempos operativos y reduciendo errores manuales.
         priority: high
 
     technical:
@@ -86,54 +91,60 @@ experiencia_laboral:
         - Integración con servicios externos (SaaS APIs)
 
   - cargo: "Desarrollador Odoo Freelance"
-    empresa: "Opentech - Uruguay / PosExpert - El Salvador/ Oz Solutions - Perú"
+    empresa: "Clientes internacionales (Opentech, PosExpert, Oz Solutions)"
     periodo: "Abr 2024 - Actualidad"
 
     resumen: >
-      Desarrollo de soluciones Odoo para clientes internacionales.
+      Desarrollo de soluciones Odoo para múltiples clientes en LATAM,
+      enfocado en personalización, integración y escalabilidad.
 
     logros:
       - texto: Desarrollo de módulos personalizados y adaptaciones sobre Odoo estándar.
         priority: high
+
       - texto: Integración frontend React con backend Odoo.
         priority: high
-      - texto: Implementación de integraciones REST API.
+
+      - texto: Implementación de integraciones REST API para sistemas externos.
         priority: high
 
     technical:
       stack:
-        - Odoo 15/16/17/18
+        - Odoo 15 - 18
         - Python
         - PostgreSQL
         - Docker
+
       arquitectura:
         - Integración React + Odoo Backend
         - Diseño modular basado en ORM
 
-  - cargo: Especialista Python – Odoo
-    empresa: Rapid Technologies / Grupo Quanam
+  - cargo: "Especialista Python – Odoo"
+    empresa: "Rapid Technologies / Grupo Quanam"
     periodo: "Jun 2023 - Abr 2024"
 
     logros:
-      - texto: Desarrollo de funcionalidades para distribuidoras corporativas (ALICORP).
+      - texto: Desarrollo de soluciones para distribuidoras corporativas (Alicorp).
         priority: high
-      - texto: Migraciones e implementaciones Odoo.
+
+      - texto: Migraciones e implementaciones Odoo en entornos productivos.
         priority: high
-      - texto: Configuración de localizaciones regionales.
+
+      - texto: Configuración y adaptación de localizaciones regionales.
         priority: medium
 
-  - cargo: Desarrollador Odoo
-    empresa: Ministerio de Salud
+  - cargo: "Desarrollador Odoo"
+    empresa: "Ministerio de Salud"
     periodo: "Nov 2016 - Mar 2022"
 
     logros:
-      - texto: Sistema Sicovid-Empresas para vigilancia sanitaria nacional.
+      - texto: Desarrollo de sistemas críticos a nivel nacional (SICOVID Empresas, Historia Clínica Electrónica) para el sector salud.
         priority: high
-      - texto: Plataforma nacional de calidad del agua.
+
+      - texto: Implementación de plataformas de gestión sanitaria y calidad del agua.
         priority: high
-      - texto: Historia Clínica Electrónica.
-        priority: medium
-      - texto: Sistema de Recursos Humanos institucional.
+
+      - texto: Desarrollo de sistemas institucionales de recursos humanos.
         priority: medium
 
     technical:
@@ -143,6 +154,7 @@ experiencia_laboral:
         - Django
         - PostgreSQL
         - Docker
+
       arquitectura:
         - Odoo Backend
 
@@ -151,13 +163,13 @@ experiencia_laboral:
     periodo: "Ago 2021 - Oct 2021"
 
     logros:
-      - texto: "Capacitación especializada en desarrollo backend y frontend sobre Odoo ERP para estudiantes y profesionales TI."
+      - texto: Capacitación en desarrollo backend y frontend sobre Odoo ERP para profesionales TI.
         priority: high
 
-      - texto: "Diseño e implementación de entornos de desarrollo Odoo basados en Linux, Docker y PostgreSQL."
+      - texto: Implementación de entornos de desarrollo con Docker, Linux y PostgreSQL.
         priority: high
 
-      - texto: "Formación práctica en arquitectura Odoo, ORM y despliegue de aplicaciones ERP."
+      - texto: Formación en arquitectura Odoo y despliegue de soluciones ERP.
         priority: medium
 
     technical:
@@ -167,6 +179,7 @@ experiencia_laboral:
         - Docker
         - PostgreSQL
         - Linux
+
       arquitectura:
         - Entornos reproducibles de desarrollo ERP
         - Configuración DevOps básica para Odoo
@@ -176,13 +189,13 @@ experiencia_laboral:
     periodo: "Sep 2016 - Nov 2016"
 
     logros:
-      - texto: "Desarrollo del sistema de facturación electrónica y retenciones conforme a normativa fiscal peruana."
+      - texto: Desarrollo de sistema de facturación electrónica conforme a normativa peruana.
         priority: high
 
-      - texto: "Implementación y localización de módulos Odoo adaptados a procesos contables nacionales."
+      - texto: Implementación de módulos contables adaptados a procesos locales.
         priority: high
 
-      - texto: "Personalización de flujos administrativos mediante extensiones del framework Odoo."
+      - texto: Personalización de flujos administrativos en Odoo.
         priority: medium
 
     technical:
@@ -191,6 +204,7 @@ experiencia_laboral:
         - Python
         - PostgreSQL
         - XML
+
       arquitectura:
         - Localización fiscal Odoo Perú
         - Extensión modular mediante ORM
@@ -200,13 +214,13 @@ experiencia_laboral:
     periodo: "Feb 2015 - Sep 2015"
 
     logros:
-      - texto: "Desarrollo de plataforma de homologación de proveedores basada en evaluación cuantitativa de riesgos."
+      - texto: Desarrollo de plataforma de homologación de proveedores basada en evaluación de riesgos.
         priority: high
 
-      - texto: "Diseño de modelos de evaluación automatizada para soporte en procesos de contratación empresarial."
+      - texto: Implementación de modelos automatizados para procesos de contratación empresarial.
         priority: high
 
-      - texto: "Personalización de módulos Odoo alineados a requerimientos específicos del cliente."
+      - texto: Personalización de módulos Odoo según requerimientos del cliente.
         priority: medium
 
     technical:
@@ -214,6 +228,7 @@ experiencia_laboral:
         - Odoo
         - Python
         - PostgreSQL
+
       arquitectura:
         - Modelado de evaluación de riesgo empresarial
         - Desarrollo modular ERP
@@ -225,5 +240,6 @@ educacion:
 idiomas:
   - idioma: Español
     nivel: Nativo
+
   - idioma: Inglés
     nivel: Técnico
