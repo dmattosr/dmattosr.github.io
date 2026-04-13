@@ -57,8 +57,36 @@ habilidades_tecnicas:
     - Linux (Ubuntu/Debian/CachyOS)
 
 experiencia_laboral:
+  - cargo: "Desarrollador Python / Odoo"
+    empresa: "Crombie.dev - Argentina"
+    periodo: "Ene 2025 - Actualidad"
+
+    resumen: >
+      Desarrollo de soluciones Odoo para clientes internacionales, incluyendo
+      automatización documental e integración con servicios SaaS externos.
+
+    logros:
+      - texto: Desarrollo de módulos Odoo e integración con APIs externas (iLovePDF, iLoveSign), automatizando el procesamiento y firma de documentos.
+        priority: high
+
+      - texto: Integración con APIs de servicios como iLovePDF, iLoveIMG e iLoveSign para automatización de procesamiento de documentos.
+        priority: high
+
+    technical:
+      stack:
+        - Odoo 15 - 19
+        - Python 3.10 - 3.14
+        - PostgreSQL
+        - Docker
+        - REST APIs
+
+      arquitectura:
+        - Integración React + Odoo Backend
+        - Diseño modular basado en ORM
+        - Integración con servicios externos (SaaS APIs)
+
   - cargo: "Desarrollador Odoo Freelance"
-    empresa: "Crombie.dev - Argentina / Opentech - Uruguay / PosExpert - El Salvador/ Oz Solutions - Perú"
+    empresa: "Opentech - Uruguay / PosExpert - El Salvador/ Oz Solutions - Perú"
     periodo: "Abr 2024 - Actualidad"
 
     resumen: >
@@ -74,7 +102,7 @@ experiencia_laboral:
 
     technical:
       stack:
-        - Odoo 15/16/17
+        - Odoo 15/16/17/18
         - Python
         - PostgreSQL
         - Docker
