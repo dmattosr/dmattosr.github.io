@@ -10,22 +10,23 @@ informacion_personal:
     portafolio: dmattosr.github.io
 
 disponibilidad:
-  modalidad: Freelance
-  tipo: Remoto
-  disponibilidad: Full-time
+  modalidad: Freelance / Contractor
+  jornada: Full-time
+  ubicacion: Remoto
+  incorporacion: A convenir
+  franja_horaria: "Flexible (Adaptable a horario de España: 13:00 - 23:00 hs)"
 
 perfil:
   corto: >
-    Senior Odoo & Python Developer con +10 años de experiencia en proyectos ERP,
-    especializado en integración de sistemas y automatización documental.
+    Software Engineer | Senior Odoo & Python Developer con +10 años de experiencia en proyectos ERP,
+    especializado en integración de sistemas, automatización documental y desarrollo asistido
+    por IA.
     Experiencia trabajando de forma remota con equipos internacionales en LATAM.
 
   largo: >
-    Desarrollador Senior Odoo con más de 10 años de experiencia diseñando
-    soluciones ERP orientadas a integración y automatización de procesos.
-    Especializado en arquitectura Odoo, backend en Python e integración con
-    servicios externos (REST APIs, SaaS). Experiencia en proyectos internacionales,
-    colaborando en equipos distribuidos y entornos ágiles.
+    Software Engineer | Desarrollador Senior Odoo & Python con más de 10 años de experiencia diseñando
+    soluciones ERP orientadas a integración, automatización de procesos y desarrollo asistido
+    por IA.
 
 especialidades:
   - Integración de sistemas (APIs, SaaS)
@@ -38,6 +39,7 @@ habilidades_tecnicas:
     - Odoo (v10 - v19)
     - Python (Backend & Integrations)
     - PostgreSQL (Optimization & Tuning)
+    - Experiencia en migración de sistemas Legacy
     - REST APIs (Integration Design)
     - Docker (Containerization)
     - Linux (Production Environments)

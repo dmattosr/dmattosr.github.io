@@ -224,5 +224,31 @@
             <strong>{{ lang.idioma }}:</strong> {{ lang.nivel }} {% if not
             loop.last %} | {% endif %} {% endfor %}
         </p>-->
+
+        <!-- DISPONIBILIDAD -->
+        <div class="section-title">DISPONIBILIDAD</div>
+
+        <div class="skills-container">
+            <div class="item">
+                <div style="font-weight: bold">Modalidad:</div>
+                <div>{{ c.disponibilidad.modalidad }}</div>
+            </div>
+            <!--div class="item">
+                <div style="font-weight: bold">Jornada:</div>
+                <div>{{ c.disponibilidad.jornada }}</div>
+            </div-->
+            <!--div class="item">
+                <div style="font-weight: bold">Ubicación:</div>
+                <div>{{ c.disponibilidad.ubicacion }}</div>
+            </div-->
+            <div class="item">
+                <div style="font-weight: bold">Incorporación:</div>
+                <div>{{ c.disponibilidad.incorporacion }}</div>
+            </div>
+            <!--div class="item">
+                <div style="font-weight: bold">Franja horaria:</div>
+                <div>{{ c.disponibilidad.franja_horaria }}</div>
+                </div-->
+        </div>
     </body>
 </html>
