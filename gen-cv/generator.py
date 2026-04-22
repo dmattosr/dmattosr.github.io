@@ -37,5 +37,6 @@ html_out = template.render(c=data, mode=args.profile)
 
 # 4. Generar el PDF
 HTML(string=html_out).write_pdf("CV_Daniel_Mattos.pdf")
-HTML(string=html_out).write_pdf("../assets/cv-DanielMattos-DesarrolladorSoftware.pdf")
+HTML(string=html_out).write_pdf("cv-DanielMattos-SoftwareEngineer.pdf")
+HTML(string=html_out).write_pdf("../assets/cv-DanielMattos-SoftwareEngineer.pdf")
 print("¡CV generado con éxito: CV_Daniel_Mattos.pdf!")
