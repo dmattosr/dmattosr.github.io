@@ -4,7 +4,7 @@ Primero, crea una carpeta para tu proyecto de CV e instala las dependencias nece
 ```bash
 # Creamos un entorno virtual para mantener limpio tu sistema
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate.fish
 # Instalamos las herramientas de procesamiento
 pip install PyYAML jinja2 weasyprint
 ```

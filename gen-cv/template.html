@@ -1,254 +1,301 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <style>
-            @page {
-                margin: 1.5cm;
-                size: A4;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @page {
+        margin: 1.5cm;
+        size: A4;
+      }
 
-            body {
-                font-family: "Helvetica", "Arial", sans-serif;
-                color: #333;
-                line-height: 1.4;
-                margin: 0;
-                font-size: 11pt;
-            }
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url("fonts/NotoColorEmoji.ttf") format("truetype");
+        unicode-range: U+1F300-1F9FF, U+2600-26FF, U+2700-27BF;
+      }
 
-            .header {
-                border-bottom: 2px solid #2c3e50;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
-            }
+      body {
+        font-family: "Helvetica", "Arial", sans-serif;
+        color: #333;
+        line-height: 1.4;
+        margin: 0;
+        font-size: 11pt;
+      }
 
-            .name {
-                font-size: 24pt;
-                font-weight: bold;
-                color: #2c3e50;
-                text-transform: uppercase;
-                margin: 0;
-            }
+      .header {
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
 
-            .title {
-                font-size: 14pt;
-                color: #34495e;
-                margin-top: 5px;
-            }
+      .name {
+        font-size: 24pt;
+        font-weight: bold;
+        color: #2c3e50;
+        text-transform: uppercase;
+        margin: 0;
+      }
 
-            .contact-info {
-                font-size: 9pt;
-                margin-top: 10px;
-                color: #555;
-            }
+      .title {
+        font-size: 14pt;
+        color: #34495e;
+        margin-top: 5px;
+      }
 
-            .section-title {
-                font-size: 13pt;
-                font-weight: bold;
-                color: #2c3e50;
-                background: #f4f7f6;
-                padding: 5px 10px;
-                margin-top: 20px;
-                margin-bottom: 10px;
-                border-left: 4px solid #2c3e50;
-            }
+      .contact-info {
+        font-size: 9pt;
+        margin-top: 10px;
+        color: #555;
+      }
 
-            .item {
-                margin-bottom: 15px;
-            }
+      .contact-info .emoji {
+        font-family: "Noto Color Emoji", sans-serif;
+      }
 
-            .item-header {
-                display: flex;
-                justify-content: space-between;
-                font-weight: bold;
-            }
+      .section-title {
+        font-size: 13pt;
+        font-weight: bold;
+        color: #2c3e50;
+        background: #f4f7f6;
+        padding: 5px 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-left: 4px solid #2c3e50;
+      }
 
-            .company {
-                color: #2980b9;
-            }
+      .item {
+        margin-bottom: 15px;
+      }
 
-            .period {
-                color: #7f8c8d;
-                font-size: 10pt;
-                text-align: right;
-            }
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+      }
 
-            ul {
-                margin-top: 5px;
-                padding-left: 20px;
-            }
-            li {
-                margin-bottom: 3px;
-            }
+      .company {
+        color: #2980b9;
+      }
 
-            .skills-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
+      .period {
+        color: #7f8c8d;
+        font-size: 10pt;
+        text-align: right;
+      }
 
-            .skill-category {
-                font-weight: bold;
-                font-size: 10pt;
-                color: #2c3e50;
-            }
+      ul {
+        margin-top: 5px;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 3px;
+      }
 
-            .tech-box {
-                background: #f7f7f7;
-                padding: 8px;
-                border-radius: 4px;
-                margin-top: 6px;
-                font-size: 10pt;
-            }
-        </style>
-    </head>
+      .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
 
-    <body>
-        <!-- HEADER -->
-        <div class="header">
-            <h1 class="name">{{ c.informacion_personal.nombre }}</h1>
+      .skill-category {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #2c3e50;
+      }
 
-            <div class="title">
-                {{ c.informacion_personal.titulo_profesional }}
-            </div>
+      .tech-box {
+        background: #f7f7f7;
+        padding: 8px;
+        border-radius: 4px;
+        margin-top: 6px;
+        font-size: 10pt;
+      }
 
-            <div class="contact-info">
-                📍 {{ c.informacion_personal.contacto.ubicacion }} | 📞
-                <a href="tel:{{ c.informacion_personal.contacto.telefono }}">
-                    {{ c.informacion_personal.contacto.telefono }}
-                </a>
-                | ✉️
-                <a href="mailto:{{ c.informacion_personal.contacto.email }}">
-                    {{ c.informacion_personal.contacto.email }}
-                </a>
+      .contribucion-item {
+        margin-bottom: 6px;
+        padding-left: 10px;
+      }
 
-                <br />
+      .proyecto-item {
+        margin-bottom: 4px;
+        padding-left: 10px;
+      }
 
-                💼 LinkedIn:
-                <a
-                    href="https://{{ c.informacion_personal.contacto.linkedin }}"
-                    target="_blank"
-                >
-                    {{ c.informacion_personal.contacto.linkedin }}
-                </a>
-                | 🌐 Portafolio:
-                <a
-                    href="https://{{ c.informacion_personal.contacto.portafolio }}"
-                    target="_blank"
-                >
-                    {{ c.informacion_personal.contacto.portafolio }}
-                </a>
-            </div>
-        </div>
+      .areas-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 20px;
+      }
 
-        <!-- PERFIL -->
-        <div class="section-title">PERFIL PROFESIONAL</div>
+      .areas-grid li {
+        margin-bottom: 2px;
+      }
+    </style>
+  </head>
 
-        <p>
-            {% if mode == "technical" %} {{ c.perfil.largo }} {% else %} {{
-            c.perfil.corto }} {% endif %}
-        </p>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1 class="name">{{ c.informacion_personal.nombre }}</h1>
 
-        <!-- EXPERIENCIA -->
-        <div class="section-title">EXPERIENCIA LABORAL</div>
+      <div class="title">{{ c.informacion_personal.titulo_profesional }}</div>
 
-        {% for job in c.experiencia_laboral[:(None if mode == "technical" else
-        None)] %}
-        <div class="item">
-            <div class="item-header">
-                <span class="company">
-                    {{ job.cargo }}<br />
-                    <em>{{ job.empresa }}</em>
-                </span>
+      <div class="contact-info">
+        <span class="emoji">📍</span>
+        {{ c.informacion_personal.contacto.ubicacion }} |
+        <span class="emoji">📞</span>
+        <a href="tel:{{ c.informacion_personal.contacto.telefono }}">{{ c.informacion_personal.contacto.telefono }}</a>
+        |
+        <span class="emoji">✉️</span>
+        <a href="mailto:{{ c.informacion_personal.contacto.email }}">{{ c.informacion_personal.contacto.email }}</a>
 
-                <span class="period">{{ job.periodo }}</span>
-            </div>
+        <br />
 
-            <ul>
-                {% if mode == "short" %} {% for l in job.logros if l.priority ==
-                "high" %}
-                <li>{{ l.texto }}</li>
-                {% endfor %} {% else %} {% for l in job.logros %}
-                <li>{{ l.texto }}</li>
-                {% endfor %} {% endif %}
-            </ul>
+        <span class="emoji">💼</span>
+        LinkedIn:
+        <a href="https://{{ c.informacion_personal.contacto.linkedin }}" target="_blank">
+          {{ c.informacion_personal.contacto.linkedin }}
+        </a>
+        |
+        <span class="emoji">🌐</span>
+        Portafolio:
+        <a href="https://{{ c.informacion_personal.contacto.portafolio }}" target="_blank">
+          {{ c.informacion_personal.contacto.portafolio }}
+        </a>
+        <br />
+        <span class="emoji">🌐</span>
+        Integraciones oficiales de {% for link in c.lcontribuciones_links %}
 
-            <!-- SOLO CV TECNICO -->
-            {% if mode == "technical" and job.technical %}
-            <div class="tech-box">
-                <strong>Stack:</strong>
-                {{ job.technical.stack | join(", ") }}<br />
+        <a href="{{ link.url }}" target="_blank">{{ link.text }}</a>
+        &nbsp;&nbsp;&nbsp; {% endfor %}
+      </div>
+    </div>
 
-                <strong>Arquitectura:</strong>
-                {{ job.technical.arquitectura | join(", ") }}
-            </div>
-            {% endif %}
-        </div>
-        {% endfor %}
+    <!-- PERFIL -->
+    <div class="section-title">PERFIL PROFESIONAL</div>
 
-        <!-- SKILLS -->
-        <div class="section-title">HABILIDADES TÉCNICAS</div>
+    <p>{% if mode == "technical" %} {{ c.perfil.largo }} {% else %} {{ c.perfil.corto }} {% endif %}</p>
 
-        <div class="skills-container">
-            <div>
-                <div class="skill-category">Core Stack:</div>
-                <p>{{ c.habilidades_tecnicas.core_stack | join(', ') }}</p>
+    <!-- ÁREAS DE ESPECIALIZACIÓN -->
+    <div class="section-title">ÁREAS DE ESPECIALIZACIÓN</div>
 
-                <div class="skill-category">Lenguajes:</div>
-                <p>{{ c.habilidades_tecnicas.lenguajes | join(', ') }}</p>
-            </div>
+    <ul class="areas-grid">
+      {% for area in c.areas_especializacion %}
+      <li>{{ area }}</li>
+      {% endfor %}
+    </ul>
 
-            <div>
-                <div class="skill-category">Bases de Datos:</div>
-                <p>{{ c.habilidades_tecnicas.base_de_datos | join(', ') }}</p>
+    <!-- CONTRIBUCIONES DESTACADAS -->
+    <div class="section-title">CONTRIBUCIONES DESTACADAS</div>
 
-                <div class="skill-category">DevOps:</div>
-                <p>{{ c.habilidades_tecnicas.devops_tools | join(', ') }}</p>
-            </div>
-        </div>
+    {% for item in c.contribuciones %}
+    <div class="contribucion-item">{{ item }}</div>
+    {% endfor %}
+    <!-- EXPERIENCIA -->
+    <div class="section-title">EXPERIENCIA LABORAL</div>
 
-        <!-- EDUCACION -->
-        <div class="section-title">EDUCACIÓN</div>
+    {% for job in c.experiencia_laboral[:(None if mode == "technical" else None)] %}
+    <div class="item">
+      <div class="item-header">
+        <span class="company">
+          {{ job.cargo }}
+          <br />
+          <em>{{ job.empresa }}</em>
+        </span>
 
-        {% for edu in c.educacion %}
-        <div class="item">
-            <div style="font-weight: bold">{{ edu.grado }}</div>
-            <div>{{ edu.institucion }}</div>
-        </div>
-        {% endfor %}
+        <span class="period">{{ job.periodo }}</span>
+      </div>
 
-        <!-- IDIOMAS -->
-        <!--<div class="section-title">IDIOMAS</div>
+      <ul>
+        {% if mode == "short" %} {% for l in job.logros if l.priority == "high" %}
+        <li>{{ l.texto }}</li>
+        {% endfor %} {% else %} {% for l in job.logros %}
+        <li>{{ l.texto }}</li>
+        {% endfor %} {% endif %}
+      </ul>
+
+      <!-- SOLO CV TECNICO -->
+      {% if mode == "technical" and job.technical %}
+      <div class="tech-box">
+        <strong>Stack:</strong>
+        {{ job.technical.stack | join(", ") }}
+        <br />
+
+        <strong>Arquitectura:</strong>
+        {{ job.technical.arquitectura | join(", ") }}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <!-- SKILLS -->
+    <div class="section-title">HABILIDADES TÉCNICAS</div>
+
+    <div class="skills-container">
+      <div>
+        <div class="skill-category">ERP & Business Applications:</div>
+        <p>{{ c.habilidades_tecnicas.erp_business | join(', ') }}</p>
+
+        <div class="skill-category">Backend & Integración Empresarial:</div>
+        <p>{{ c.habilidades_tecnicas.backend_integracion | join(', ') }}</p>
+
+        <div class="skill-category">Bases de Datos:</div>
+        <p>{{ c.habilidades_tecnicas.base_de_datos | join(', ') }}</p>
+      </div>
+
+      <div>
+        <div class="skill-category">Infraestructura & DevOps:</div>
+        <p>{{ c.habilidades_tecnicas.infraestructura_devops | join(', ') }}</p>
+
+        <div class="skill-category">Cloud & Security:</div>
+        <p>{{ c.habilidades_tecnicas.cloud | join(', ') }}</p>
+
+        <div class="skill-category">Tecnologías Complementarias:</div>
+        <p>{{ c.habilidades_tecnicas.tecnologias_complementarias | join(', ') }}</p>
+      </div>
+      <div class="skill-category">Herramientas de Gestión y Colaboración:</div>
+      <p>{{ c.habilidades_tecnicas.tecnologias_colaborativas | join(', ') }}</p>
+    </div>
+    </div>
+
+    <!-- EDUCACION -->
+    <div class="section-title">EDUCACIÓN</div>
+
+    {% for edu in c.educacion %}
+    <div class="item">
+      <div style="font-weight: bold">{{ edu.grado }}</div>
+      <div>{{ edu.institucion }}</div>
+    </div>
+    {% endfor %}
+
+    <!-- FORMACIÓN COMPLEMENTARIA -->
+    <div class="section-title">FORMACIÓN COMPLEMENTARIA</div>
+
+    {% for item in c.formacion_complementaria %}
+    <div class="contribucion-item">{{ item }}</div>
+    {% endfor %}
+
+    <!-- IDIOMAS -->
+    <!--<div class="section-title">IDIOMAS</div>
         <p>
             {% for lang in c.idiomas %}
             <strong>{{ lang.idioma }}:</strong> {{ lang.nivel }} {% if not
             loop.last %} | {% endif %} {% endfor %}
         </p>-->
 
-        <!-- DISPONIBILIDAD -->
-        <div class="section-title">DISPONIBILIDAD</div>
+    <!-- DISPONIBILIDAD -->
+    <!--<div class="section-title">DISPONIBILIDAD</div>-->
 
-        <div class="skills-container">
-            <div class="item">
-                <div style="font-weight: bold">Modalidad:</div>
-                <div>{{ c.disponibilidad.modalidad }}</div>
-            </div>
-            <!--div class="item">
-                <div style="font-weight: bold">Jornada:</div>
-                <div>{{ c.disponibilidad.jornada }}</div>
-            </div-->
-            <!--div class="item">
-                <div style="font-weight: bold">Ubicación:</div>
-                <div>{{ c.disponibilidad.ubicacion }}</div>
-            </div-->
-            <div class="item">
-                <div style="font-weight: bold">Incorporación:</div>
-                <div>{{ c.disponibilidad.incorporacion }}</div>
-            </div>
-            <!--div class="item">
-                <div style="font-weight: bold">Franja horaria:</div>
-                <div>{{ c.disponibilidad.franja_horaria }}</div>
-                </div-->
-        </div>
-    </body>
+    <!--<div class="skills-container">
+      <div class="item">
+        <div style="font-weight: bold">Modalidad:</div>
+        <div>{{ c.disponibilidad.modalidad }}</div>
+      </div>
+
+      <div class="item">
+        <div style="font-weight: bold">Incorporación:</div>
+        <div>{{ c.disponibilidad.incorporacion }}</div>
+      </div>
+    </div>-->
+  </body>
 </html>
