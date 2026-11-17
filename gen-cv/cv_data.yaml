@@ -39,7 +39,7 @@ lcontribuciones_links:
 
 habilidades_tecnicas:
   erp_business:
-    - Odoo (v10 – v19)
+    - OpenERP/Odoo (v8 – v20)
     - Desarrollo de módulos y customizaciones
     - Migración y modernización de plataformas ERP
 
@@ -202,7 +202,7 @@ experiencia_laboral:
 
     technical:
       stack:
-        - Odoo 10/14
+        - OpenERP/Odoo
         - Python
         - Django
         - PostgreSQL
